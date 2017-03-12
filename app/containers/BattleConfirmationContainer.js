@@ -38,9 +38,22 @@ var BattleConfirmationContainer = React.createClass({
          console.log('Component will unmount');
     },
 
+    handleBattleInitialization: function() {
+        this.context.router.push({
+            pathname: '/results',
+            state: {
+                playersInfo: this.state.playersInfo
+            }
+        });
+    },
+
     render: function() {
         return(
-            <BattleConfirmation isLoading={this.state.isLoading} playersInfo={this.state.playersInfo} />
+            <BattleConfirmation 
+                isLoading={this.state.isLoading} 
+                playersInfo={this.state.playersInfo} 
+                onBattleInit={this.handleBattleInitialization}
+            />
         );
     }
 });
