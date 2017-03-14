@@ -4,7 +4,7 @@ var React = require('react'),
 function UserDetails(user) {
     return (
         <div>
-            {!!user.score && <li className="list-group-item">
+            {(!!user.score || user.score === 0) && <li className="list-group-item">
                 <h3>Score: {user.score}</h3>
             </li>}
             <li className="list-group-item">

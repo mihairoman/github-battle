@@ -5,7 +5,8 @@ var React = require('react'),
     Link = ReactRouter.Link,
     UserDetails = require('../components/UserDetails'),
     UserDetailsWrapper = require('../components/UserDetailsWrapper'),
-    Loading = require('../components/Loading');
+    Loading = require('../components/Loading'),
+    MainContainer = require('../components/MainContainer');
 
 function puke(obj) {
     return <pre>{JSON.stringify(obj, null, ' ')}</pre>
@@ -14,7 +15,7 @@ function puke(obj) {
 function BattleConfirmation(props) {
     return (props.isLoading === true
         ? <Loading speed={500} text='Waiting' />
-        : <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
+        : <MainContainer>
             <h1>Confirm Players</h1>
             <div className='col-sm-8 col-sm-offset-2'>
                 <UserDetailsWrapper header='Player One'>
@@ -37,7 +38,7 @@ function BattleConfirmation(props) {
                     </Link>
                 </div>
             </div>
-        </div>);
+        </MainContainer>);
 }
 
 BattleConfirmation.propTypes = {
