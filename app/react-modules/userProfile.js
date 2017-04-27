@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 var ProfilePic = React.createClass({
     render: function () {
-        console.log(this.props.imgURL)
+        console.log(this.props.imgURL);
         return (<img src={this.props.imgURL} alt="User image profile" style={{height: 100, width: 100}}/>);
     }
 });

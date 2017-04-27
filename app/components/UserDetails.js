@@ -37,6 +37,6 @@ UserDetails.PropTypes = {
         name: PropTypes.string,
         public_repos: PropTypes.number.isRequired
     })
-}
+};
 
 module.exports = UserDetails;

@@ -45,12 +45,12 @@ function Results(props) {
                 <UserDetailsWrapper header='Winner'>
                     <UserDetails
                         score={props.scores[winningIndex]}
-                        info={props.playersInfo[winningIndex]}></UserDetails>
+                        info={props.playersInfo[winningIndex]}/>
                 </UserDetailsWrapper>
                 <UserDetailsWrapper header='Loser'>
                     <UserDetails
                         score={props.scores[losingIndex]}
-                        info={props.playersInfo[losingIndex]}></UserDetails>
+                        info={props.playersInfo[losingIndex]}/>
                 </UserDetailsWrapper>
             </div>
             <StartOver/>
@@ -62,6 +62,6 @@ Results.propTypes = {
     isLoading: PropTypes.bool.isRequired,
     playersInfo: PropTypes.array.isRequired,
     scores: PropTypes.array.isRequired
-}
+};
 
 module.exports = Results;

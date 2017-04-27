@@ -29,6 +29,6 @@ Prompt.propTypes = {
     onUserSubmit: PropTypes.func.isRequired,
     onUserUpdate: PropTypes.func.isRequired,
     username: PropTypes.string.isRequired
-}
+};
 
 module.exports = Prompt;

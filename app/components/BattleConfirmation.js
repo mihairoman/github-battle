@@ -45,6 +45,6 @@ BattleConfirmation.propTypes = {
     isLoading: PropTypes.bool.isRequired,
     playersInfo: PropTypes.array.isRequired,
     onBattleInit: PropTypes.func.isRequired
-}
+};
 
 module.exports = BattleConfirmation;

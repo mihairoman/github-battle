@@ -39,7 +39,7 @@ var BattleConfirmationContainer = React.createClass({
     },
 
     handleBattleInitialization: function() {
-        console.log("PLAYERS INFO " , this.state.playersInfo)
+        console.log("PLAYERS INFO " , this.state.playersInfo);
         this.context.router.push({
             pathname: '/results',
             state: {
